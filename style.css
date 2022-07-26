@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(165, 89, 2);
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+form {
+  width: 500px;
+  height: max-content;
+  padding: 20px 10px 50px;
+  background: rgb(22, 223, 230);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: rgb(1, 26, 59);
+  margin: 20px auto;
+}
+
+input {
+  width: 220px;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  outline: none;
+  background: rgb(214, 138, 51);
+  border: 2px solid salmon;
+  box-shadow: 5px 5px 10px rgba(26, 25, 25, 0.513);
+  color: white;
+  font-weight: 400;
+}
+
+input:focus {
+  border: 2px solid rgb(243, 26, 44);
+  transform: scale(1.1);
+  color: white;
+  font-weight: 400;
+}
+
+ul {
+  width: 80%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+  color: rgb(49, 49, 49);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  position: relative;
+}
+
+li:hover {
+  border-left: 2px solid white;
+}
+
+li.selected {
+  color: rgb(182, 62, 7);
+}
+
+li.selected:hover {
+  border-left: 2px solid rgb(230, 38, 38);
+}
+li.selected:hover::after {
+  padding: 5px 10px;
+  position: absolute;
+  content: "(supprimer !)";
+  color: rgb(189, 53, 53);
+  font-size: 0.7rem;
+}
